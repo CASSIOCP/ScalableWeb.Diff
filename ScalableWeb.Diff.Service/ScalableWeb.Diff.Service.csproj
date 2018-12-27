@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ScalableWeb.Diff.Data.Acess\ScalableWeb.Diff.Data.Acess.csproj" />
+    <ProjectReference Include="..\ScalableWeb.Diff.Data.Access\ScalableWeb.Diff.Data.Access.csproj" />
     <ProjectReference Include="..\ScalableWeb.Diff.Model\ScalableWeb.Diff.Model.csproj" />
   </ItemGroup>
 

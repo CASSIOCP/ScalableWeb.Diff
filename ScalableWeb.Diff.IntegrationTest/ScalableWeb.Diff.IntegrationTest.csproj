@@ -14,7 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ScalableWe.Diff.Application\ScalableWeb.Diff.Service.csproj" />
     <ProjectReference Include="..\ScalableWeb.Diff\ScalableWeb.Diff.Api.csproj" />
   </ItemGroup>
 

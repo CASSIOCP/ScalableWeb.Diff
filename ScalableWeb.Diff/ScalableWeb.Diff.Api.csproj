@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ScalableWe.Diff.Application\ScalableWeb.Diff.Service.csproj" />
+    <ProjectReference Include="..\ScalableWeb.Diff.Service\ScalableWeb.Diff.Service.csproj" />
   </ItemGroup>
 
 </Project>

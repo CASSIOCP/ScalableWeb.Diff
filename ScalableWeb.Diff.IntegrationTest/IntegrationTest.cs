@@ -9,7 +9,7 @@ namespace ScalableWeb.Diff.IntegrationTest
     public class IntegrationTest
     {
         private const string Route = "v1/diff";
-        private const int Id = 1234;
+        private const int Id = 123;
 
         private readonly string leftUri = $"{Route}/{Id}/left";
         private readonly string rightUri = $"{Route}/{Id}/right";
@@ -17,7 +17,7 @@ namespace ScalableWeb.Diff.IntegrationTest
         [Fact]
         public async Task Test_SetLeft_Success()
         {
-            string fileContent = File.ReadAllText(@"..\..\..\DataFiles\SameSize1.txt");
+            string fileContent = File.ReadAllText(@"..\..\..\..\files\SameSize1.txt");
 
             using (var client = new TestClientProvider().Client)
             {
@@ -65,7 +65,7 @@ namespace ScalableWeb.Diff.IntegrationTest
         [Fact]
         public async Task Test_SetRight_Success()
         {
-            string fileContent = File.ReadAllText(@"..\..\..\DataFiles\SameSize2.txt");
+            string fileContent = File.ReadAllText(@"..\..\..\..\files\SameSize2.txt");
 
             using (var client = new TestClientProvider().Client)
             {
@@ -77,7 +77,7 @@ namespace ScalableWeb.Diff.IntegrationTest
             }
         }
 
-        [Fact]
+        [Fact]        
         public async Task Test_SetRight_InvalidContent()
         {
             using (var client = new TestClientProvider().Client)
