@@ -18,13 +18,13 @@ namespace ScalableWeb.Diff.Provider.Services
                 var comparer = comparerRepository.Find(id);
 
                 if (comparer is null)
-                    throw new ArgumentNullException("Content not found");
+                    throw new ArgumentNullException("Comparer not found");
 
                 if (comparer.Left.Equals(comparer.Right))
-                    return "Content is the same.";
+                    return "Contents are the same.";
 
                 if (!comparer.Left.Length.Equals(comparer.Right.Length))
-                    return "Content is not of the same size.";
+                    return "Contents are not of the same size.";
 
                 string jsonLeft = Encoding.UTF8.GetString(Convert.FromBase64String(comparer.Left));
                 string jsonRight = Encoding.UTF8.GetString(Convert.FromBase64String(comparer.Right));

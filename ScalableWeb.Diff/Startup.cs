@@ -36,7 +36,7 @@ namespace ScalableWeb.Diff.Api
                 {
                     Title = Title,
                     Version = Version,
-                    Description = "A Diff Comparer ASP.NET Core Web Api",
+                    Description = "A scalable .NET Core web Api to check diff content.",
                     Contact = new Contact
                     {
                         Name = "Cássio C. Perin",
