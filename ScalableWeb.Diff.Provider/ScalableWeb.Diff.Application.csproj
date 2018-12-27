@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LiteDB" Version="4.1.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ScalableWe.Diff.Application\ScalableWeb.Diff.Service.csproj" />
+    <ProjectReference Include="..\ScalableWeb.Diff.Model\ScalableWeb.Diff.Model.csproj" />
+  </ItemGroup>
+
+</Project>
