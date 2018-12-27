@@ -10,7 +10,7 @@ using System.Text.RegularExpressions;
 namespace ScalableWeb.Diff.Provider.Services
 {
     public class DiffService : IDiffService
-    {
+    {     
         public string Get(int id)
         {
             using (var comparerRepository = new ComparerRepository())
@@ -87,6 +87,10 @@ namespace ScalableWeb.Diff.Provider.Services
             }
         }
 
+        /// <summary>
+        /// Determine if the parameter is a valid base64 encoded string.
+        /// </summary>
+        /// <param name="s">entry string</param>
         private bool IsBase64String(string s)
         {
             s = s.Trim();
